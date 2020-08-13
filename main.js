@@ -77,7 +77,7 @@ function requestBluetoothDevice() {
 
   return navigator.bluetooth.requestDevice({
 
-    filters: [{services: [0xFFE0]}],
+    filters: [{services: [FFE0]}],
 
   }).
 
@@ -157,7 +157,7 @@ function connectDeviceAndCacheCharacteristic(device) {
 
 
 
-        return server.getPrimaryService(0xFFE0);
+        return server.getPrimaryService(FFE0);
 
       }).
 
@@ -167,7 +167,7 @@ function connectDeviceAndCacheCharacteristic(device) {
 
 
 
-        return service.getCharacteristic(0xFFE1);
+        return service.getCharacteristic(FFE1);
 
       }).
 
